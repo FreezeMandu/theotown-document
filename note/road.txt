@@ -1,0 +1,33 @@
+*모든 변수엔 "" 들어감
+
+"id" 스프라이트 경로? *$~
+"type" 타입
+"level" 필요 레벨
+"frames" [{x, y, w, h, count}]
+"speed" 속도
+"slope frames"
+"bridge frames"
+    [{x, y, w, h, count}]
+    [{x, y, w, h, count, offset y}]
+"silent frames"
+"tunnel frames"
+    [{x, y, w, h, count, handle y}]
+    [{x, y, w, h, count, handle x, handle y}]
+"frames per bridge"
+"price" 가격
+"monthly price" 유지비
+"green phase"
+"requirement"
+"width" 가로 길이?
+
+*아래부턴 변수가 참&거짓*
+"connectable"
+"draw ground"
+"one way" 일방통행?
+"allow bus stop"
+"allow transfer"
+"flag tractor"
+"auto join"
+"allow crossing"
+"pickable"
+"dev"
