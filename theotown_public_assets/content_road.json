@@ -1,0 +1,436 @@
+[
+  {
+    "id":"$anim_roadconnectionoverlay00",
+    "type":"animation",
+    "frames":[{"x":640,"y":32,"w":32,"h":32,"count":4,"handle y":24}]
+  },
+
+  {
+    "id":"$road00",
+    "type":"road",
+    "level":0,
+    "frames":[{"x":512,"y":0,"w":32,"h":16,"count":16}],
+    "speed":1.0,
+    "slope frames":[
+      {"x":240,"y":271,"w":32,"h":32,"count":4,"offset x":2048,"offset y":1024}
+    ],
+    "bridge frames":[
+      {"x":0,"y":912,"w":32,"h":48,"count":12,"offset x": 2048,"offset y": 1024},
+      {"x":896,"y":214,"w":32,"h":26,"count":4}
+    ],
+    "frames per bridge":16,
+    "price":20,
+    "monthly price":1,
+    "connectable":false,
+    "draw ground":true
+  },
+
+  {
+    "id":"$road01",
+    "type":"road",
+    "level":1,
+    "frames":[{"x":512,"y":16,"w":32,"h":16,"count":16}],
+    "bridge frames":[
+      {"x":512,"y":96,"w":32,"h":48,"count":12},
+      {"x":896,"y":214,"w":32,"h":26,"count":4},
+
+      {"x":512,"y":96,"w":32,"h":48,"count":4},
+      {"x":896,"y":96,"w":32,"h":48,"count":4},
+      {"x":768,"y":96,"w":32,"h":48,"count":4},
+      {"x":896,"y":214,"w":32,"h":26,"count":4},
+
+      {"x":512,"y":144,"w":32,"h":48,"count":12},
+      {"x":896,"y":214,"w":32,"h":26,"count":4},
+
+      {"x":512,"y":144,"w":32,"h":48,"count":4},
+      {"x":896,"y":144,"w":32,"h":48,"count":4},
+      {"x":768,"y":144,"w":32,"h":48,"count":4},
+      {"x":896,"y":214,"w":32,"h":26,"count":4},
+
+      {"x":512,"y":192,"w":32,"h":48,"count":12},
+      {"x":896,"y":214,"w":32,"h":26,"count":4}
+    ],
+    "frames per bridge":16,
+    "tunnel frames":[
+      {"x":896,"y":192,"w":16,"h":19,"handle y":7},
+      {"x":912,"y":192,"w":16,"h":19,"handle x":-16,"handle y":7},
+      {"x":928,"y":192,"w":16,"h":19,"handle y":7},
+      {"x":944,"y":192,"w":16,"h":19,"handle x":-16,"handle y":7},
+      {"x":640,"y":301,"w":32,"h":25,"count":4,"offset x":2048,"offset y":1024},
+      {"x":640,"y":326,"w":32,"h":25,"count":4,"offset x":2048,"offset y":1024}
+    ],
+    "slope frames":[
+      {"x":120,"y":311,"w":32,"h":32,"count":4,"offset x":2048,"offset y":1024}
+    ],
+    "bridge height":12,
+    "traffic lights":[{"x":512,"y":32,"w":32,"h":32,"count":4}],
+    "green phase":3000,
+    "yellow phase":500,
+    "speed":2.0,
+    
+    "price":150,
+    "bridge price":2000,
+    "monthly price":5,
+
+    "requirement":{"requirements":[{"type":"RANK", "data":{"lvl":1}}]}
+  },
+
+  {
+    "id":"$road03",
+    "type":"road",
+    "level":1,
+    "frames":[
+      {"x":512,"y":1536,"w":32,"h":16,"count":16},
+      {"x":512,"y":1552,"w":32,"h":16,"count":16},
+      {"x":512,"y":1568,"w":32,"h":16,"count":16},
+      {"x":512,"y":1584,"w":32,"h":16,"count":16}
+    ],
+    "bridge frames":[
+      {"x":512,"y":96,"w":32,"h":48,"count":12},
+      {"x":896,"y":214,"w":32,"h":26,"count":4},
+
+      {"x":512,"y":96,"w":32,"h":48,"count":4},
+      {"x":896,"y":96,"w":32,"h":48,"count":4},
+      {"x":768,"y":96,"w":32,"h":48,"count":4},
+      {"x":896,"y":214,"w":32,"h":26,"count":4},
+
+      {"x":512,"y":144,"w":32,"h":48,"count":12},
+      {"x":896,"y":214,"w":32,"h":26,"count":4},
+
+      {"x":512,"y":144,"w":32,"h":48,"count":4},
+      {"x":896,"y":144,"w":32,"h":48,"count":4},
+      {"x":768,"y":144,"w":32,"h":48,"count":4},
+      {"x":896,"y":214,"w":32,"h":26,"count":4},
+
+      {"x":512,"y":192,"w":32,"h":48,"count":12},
+      {"x":896,"y":214,"w":32,"h":26,"count":4}
+    ],
+    "tunnel frames":[
+      {"x":896,"y":192,"w":16,"h":19,"handle y":7},
+      {"x":912,"y":192,"w":16,"h":19,"handle x":-16,"handle y":7},
+      {"x":928,"y":192,"w":16,"h":19,"handle y":7},
+      {"x":944,"y":192,"w":16,"h":19,"handle x":-16,"handle y":7}
+    ],
+    "frames per bridge":16,
+    "bridge height":12,
+    "speed":2.5,
+
+    "price":300,
+    "monthly price":6,
+    "bridge price":3000,
+
+    "one way":true,
+    "requirement":{"requirements":[{"type":"RANK", "data":{"lvl":2}}]}
+  },
+
+  {
+    "id":"$road04",
+    "type":"road",
+    "level":2,
+    "frames":[
+      {"silent frames":[
+        {"x":512,"y":16,"w":32,"h":16,"count":16},
+        {"x":512,"y":640,"w":32,"h":16,"count":4,"offset y":1024}
+      ]},
+
+      {"ref":0,"count":5,"silent":true},
+      {"ref":16,"silent":true},
+      {"ref":6,"count":10,"silent":true},
+
+      {"ref":0,"count":10,"silent":true},
+      {"ref":17,"silent":true},
+      {"ref":11,"count":5,"silent":true},
+
+      {"ref":0,"count":5,"silent":true},
+      {"ref":18,"silent":true},
+      {"ref":6,"count":10,"silent":true},
+
+      {"ref":0,"count":10,"silent":true},
+      {"ref":19,"silent":true},
+      {"ref":11,"count":5,"silent":true}
+    ],
+    "bridge frames":[
+      {"x":512,"y":96,"w":32,"h":48,"count":12},
+      {"x":896,"y":214,"w":32,"h":26,"count":4},
+
+      {"x":512,"y":96,"w":32,"h":48,"count":4},
+      {"x":896,"y":96,"w":32,"h":48,"count":4},
+      {"x":768,"y":96,"w":32,"h":48,"count":4},
+      {"x":896,"y":214,"w":32,"h":26,"count":4},
+
+      {"x":512,"y":144,"w":32,"h":48,"count":12},
+      {"x":896,"y":214,"w":32,"h":26,"count":4},
+
+      {"x":512,"y":144,"w":32,"h":48,"count":4},
+      {"x":896,"y":144,"w":32,"h":48,"count":4},
+      {"x":768,"y":144,"w":32,"h":48,"count":4},
+      {"x":896,"y":214,"w":32,"h":26,"count":4},
+
+      {"x":512,"y":192,"w":32,"h":48,"count":12},
+      {"x":896,"y":214,"w":32,"h":26,"count":4}
+    ],
+    "tunnel frames":[
+      {"x":896,"y":192,"w":16,"h":19,"handle y":7},
+      {"x":912,"y":192,"w":16,"h":19,"handle x":-16,"handle y":7},
+      {"x":928,"y":192,"w":16,"h":19,"handle y":7},
+      {"x":944,"y":192,"w":16,"h":19,"handle x":-16,"handle y":7}
+    ],
+    "frames per bridge":16,
+    "bridge height":12,
+    "traffic lights":[{"x":512,"y":32,"w":32,"h":32,"count":4}],
+    "green phase":6000,
+    "yellow phase":1000,
+    "speed":2.5,
+    "price":600,
+    "bridge price":4000,
+    "monthly price":10,
+    "one way":true,
+    "width":3,
+    "decoration buildings":[
+      "$decoroad00"
+    ],
+    "requirement":{"requirements":[{"type":"RANK", "data":{"lvl":3}}]}
+  },
+
+  {
+  "id":"$road02",
+  "type":"road",
+  "level":2,
+  "frames":[{"x":512,"y":1600,"w":32,"h":32,"count":16}],
+    "bridge frames":[
+      {"x":512,"y":1632,"w":32,"h":32,"count":12},
+      {"x":608,"y":741,"w":32,"h":26,"count":4,"offset y":1024}
+    ],
+    "frames per bridge":16,
+    "tunnel frames":[
+      {"x":896,"y":192,"w":16,"h":19,"handle y":7},
+      {"x":912,"y":192,"w":16,"h":19,"handle x":-16,"handle y":7},
+      {"x":928,"y":192,"w":16,"h":19,"handle y":7},
+      {"x":944,"y":192,"w":16,"h":19,"handle x":-16,"handle y":7}
+    ],
+    "bridge height":12,
+    "speed":4.0,
+    "price":1500,
+    "bridge price":8000,
+    "monthly price":20,
+    "allow bus stop":false,
+    "allow transfer":true,
+    "requirement":{"requirements":[{"type":"RANK", "data":{"lvl":5}}]},
+    "flag tractor":false
+  },
+
+  {
+    "id":"$road05",
+    "type":"road",
+    "level":3,
+    "frames":[
+      {"silent frames":[
+        {"x":512,"y":1006,"w":32,"h":18,"count":16,"offset x":3072,"offset y":1024},
+        {"x":896,"y":988,"w":32,"h":18,"count":4,"offset x":3072,"offset y":1024}
+      ]},
+
+      {"ref":0,"count":5,"silent":true},
+      {"ref":16,"silent":true},
+      {"ref":6,"count":10,"silent":true},
+
+      {"ref":0,"count":10,"silent":true},
+      {"ref":17,"silent":true},
+      {"ref":11,"count":5,"silent":true},
+
+      {"ref":0,"count":5,"silent":true},
+      {"ref":18,"silent":true},
+      {"ref":6,"count":10,"silent":true},
+
+      {"ref":0,"count":10,"silent":true},
+      {"ref":19,"silent":true},
+      {"ref":11,"count":5,"silent":true}
+    ],
+    "bridge frames":[
+      {"x":512,"y":976,"w":32,"h":30,"count":4,"offset x":3072,"offset y":1024},
+      {"x":0,"y":0,"w":0,"h":0,"count":2},
+      {"x":640,"y":976,"w":32,"h":30,"count":6,"offset x":3072,"offset y":1024},
+      {"x":832,"y":932,"w":32,"h":26,"count":2,"offset x":3072,"offset y":1024},
+      {"x":832,"y":980,"w":32,"h":26,"count":2,"offset x":3072,"offset y":1024},
+
+      {"x":512,"y":976,"w":32,"h":30,"count":4,"offset x":3072,"offset y":1024},
+      {"x":0,"y":0,"w":0,"h":0,"count":2},
+      {"x":832,"y":880,"w":32,"h":30,"count":2,"offset x":3072,"offset y":1024},
+      {"x":896,"y":880,"w":32,"h":30,"count":4,"offset x":3072,"offset y":1024},
+      {"x":832,"y":932,"w":32,"h":26,"count":2,"offset x":3072,"offset y":1024},
+      {"x":832,"y":980,"w":32,"h":26,"count":2,"offset x":3072,"offset y":1024}
+    ],
+    "frames per bridge":16,
+    "tunnel frames":[
+      {"x":896,"y":192,"w":16,"h":19,"handle y":7},
+      {"x":912,"y":192,"w":16,"h":19,"handle x":-16,"handle y":7},
+      {"x":928,"y":192,"w":16,"h":19,"handle y":7},
+      {"x":944,"y":192,"w":16,"h":19,"handle x":-16,"handle y":7}
+    ],
+    "bridge height":12,
+    "pile distant":0,
+    "speed":5.0,
+    "price":3000,
+    "bridge price":8000,
+    "monthly price":40,
+    "allow bus stop":false,
+    "allow transfer":true,
+    "one way":true,
+    "allow crossing":false,
+    "width":2,
+    "requirement":{"requirements":[{"type":"RANK", "data":{"lvl":7}}]},
+    "auto join":false,
+    "flag tractor":false
+  },
+
+
+
+  {
+    "id":"$devroad00",
+    "dev":true,
+    "type":"road",
+    "pickable": false,
+    "level":1,
+    "frames":[{"x":512,"y":912,"w":32,"h":16,"count":16,"offset x":3072,"offset y":1024}],
+    "bridge frames":[
+      {"x":512,"y":144,"w":32,"h":48,"count":12},
+      {"x":896,"y":214,"w":32,"h":26,"count":4},
+
+      {"x":512,"y":96,"w":32,"h":48,"count":12},
+      {"x":896,"y":214,"w":32,"h":26,"count":4},
+
+      {"x":512,"y":192,"w":32,"h":48,"count":12},
+      {"x":896,"y":214,"w":32,"h":26,"count":4}
+    ],
+    "frames per bridge":16,
+    "tunnel frames":[
+      {"x":896,"y":192,"w":16,"h":19,"handle y":7},
+      {"x":912,"y":192,"w":16,"h":19,"handle x":-16,"handle y":7},
+      {"x":928,"y":192,"w":16,"h":19,"handle y":7},
+      {"x":944,"y":192,"w":16,"h":19,"handle x":-16,"handle y":7}
+    ],
+    "slope frames":[
+      {"x":512,"y":287,"w":32,"h":32,"count":4,"offset x":2048,"offset y":1024}
+    ],
+    "bridge height":12,
+    "traffic lights":[{"x":512,"y":32,"w":32,"h":32,"count":4}],
+    "green phase":6000,
+    "yellow phase":1000,
+    "speed":2.0,
+    "price":1000
+  },
+  {
+    "id":"$devroad01",
+    "dev":true,
+    "type":"road",
+    "pickable": false,
+    "level":1,
+    "frames":[
+      {"silent frames":[
+        {"x":512,"y":958,"w":32,"h":18,"count":16,"offset x":3072,"offset y":1024},
+        {"x":896,"y":940,"w":32,"h":18,"count":4,"offset x":3072,"offset y":1024}
+      ]},
+
+      {"ref":0,"count":5,"silent":true},
+      {"ref":16,"silent":true},
+      {"ref":6,"count":10,"silent":true},
+
+      {"ref":0,"count":10,"silent":true},
+      {"ref":17,"silent":true},
+      {"ref":11,"count":5,"silent":true},
+
+      {"ref":0,"count":5,"silent":true},
+      {"ref":18,"silent":true},
+      {"ref":6,"count":10,"silent":true},
+
+      {"ref":0,"count":10,"silent":true},
+      {"ref":19,"silent":true},
+      {"ref":11,"count":5,"silent":true}
+    ],
+    "bridge frames":[
+      {"x":512,"y":928,"w":32,"h":30,"count":4,"offset x":3072,"offset y":1024},
+      {"x":0,"y":0,"w":0,"h":0,"count":2},
+      {"x":640,"y":928,"w":32,"h":30,"count":6,"offset x":3072,"offset y":1024},
+      {"x":832,"y":932,"w":32,"h":26,"count":2,"offset x":3072,"offset y":1024},
+      {"x":832,"y":980,"w":32,"h":26,"count":2,"offset x":3072,"offset y":1024},
+
+      {"x":512,"y":928,"w":32,"h":30,"count":4,"offset x":3072,"offset y":1024},
+      {"x":0,"y":0,"w":0,"h":0,"count":2},
+      {"x":832,"y":880,"w":32,"h":30,"count":2,"offset x":3072,"offset y":1024},
+      {"x":896,"y":880,"w":32,"h":30,"count":4,"offset x":3072,"offset y":1024},
+      {"x":832,"y":932,"w":32,"h":26,"count":2,"offset x":3072,"offset y":1024},
+      {"x":832,"y":980,"w":32,"h":26,"count":2,"offset x":3072,"offset y":1024}
+    ],
+    "frames per bridge":16,
+    "tunnel frames":[
+      {"x":896,"y":192,"w":16,"h":19,"handle y":7},
+      {"x":912,"y":192,"w":16,"h":19,"handle x":-16,"handle y":7},
+      {"x":928,"y":192,"w":16,"h":19,"handle y":7},
+      {"x":944,"y":192,"w":16,"h":19,"handle x":-16,"handle y":7}
+    ],
+    "bridge height":12,
+    "speed":2.5,
+    "one way":true,
+    "price":1000
+  },
+  {
+    "id":"$devroad02",
+    "dev":true,
+    "type":"road",
+    "pickable": false,
+    "level":3,
+    "frames":[
+      {"silent frames":[
+        {"x":512,"y":958,"w":32,"h":18,"count":16,"offset x":3072,"offset y":1024},
+        {"x":896,"y":940,"w":32,"h":18,"count":4,"offset x":3072,"offset y":1024}
+      ]},
+
+      {"ref":0,"count":5,"silent":true},
+      {"ref":16,"silent":true},
+      {"ref":6,"count":10,"silent":true},
+
+      {"ref":0,"count":10,"silent":true},
+      {"ref":17,"silent":true},
+      {"ref":11,"count":5,"silent":true},
+
+      {"ref":0,"count":5,"silent":true},
+      {"ref":18,"silent":true},
+      {"ref":6,"count":10,"silent":true},
+
+      {"ref":0,"count":10,"silent":true},
+      {"ref":19,"silent":true},
+      {"ref":11,"count":5,"silent":true}
+    ],
+    "bridge frames":[
+      {"x":512,"y":928,"w":32,"h":30,"count":4,"offset x":3072,"offset y":1024},
+      {"x":0,"y":0,"w":0,"h":0,"count":2},
+      {"x":640,"y":928,"w":32,"h":30,"count":6,"offset x":3072,"offset y":1024},
+      {"x":832,"y":932,"w":32,"h":26,"count":2,"offset x":3072,"offset y":1024},
+      {"x":832,"y":980,"w":32,"h":26,"count":2,"offset x":3072,"offset y":1024},
+
+      {"x":512,"y":928,"w":32,"h":30,"count":4,"offset x":3072,"offset y":1024},
+      {"x":0,"y":0,"w":0,"h":0,"count":2},
+      {"x":832,"y":880,"w":32,"h":30,"count":2,"offset x":3072,"offset y":1024},
+      {"x":896,"y":880,"w":32,"h":30,"count":4,"offset x":3072,"offset y":1024},
+      {"x":832,"y":932,"w":32,"h":26,"count":2,"offset x":3072,"offset y":1024},
+      {"x":832,"y":980,"w":32,"h":26,"count":2,"offset x":3072,"offset y":1024}
+    ],
+    "frames per bridge":16,
+    "tunnel frames":[
+      {"x":896,"y":192,"w":16,"h":19,"handle y":7},
+      {"x":912,"y":192,"w":16,"h":19,"handle x":-16,"handle y":7},
+      {"x":928,"y":192,"w":16,"h":19,"handle y":7},
+      {"x":944,"y":192,"w":16,"h":19,"handle x":-16,"handle y":7}
+    ],
+    "bridge height":12,
+    "pile distant":0,
+    "speed":5.0,
+    "allow bus stop":false,
+    "allow transfer":true,
+    "one way":true,
+    "allow crossing":false,
+    "width":2,
+    "price":1000,
+    "auto join":false,
+    "flag tractor":false
+  }
+]

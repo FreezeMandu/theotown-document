@@ -1,0 +1,449 @@
+[
+  {
+    "id": "$light_train00",
+    "type": "animation",
+    "frames": [
+      {"x": 511, "y": 357, "w": 20, "h": 20, "count": 2,"handle x": 10, "handle y": 16,"offset x": 2048, "offset y": 1024},
+      {"x": 511, "y": 357, "w": 20, "h": 20, "count": 2,"handle x": 10, "handle y": 16,"offset x": 2048, "offset y": 1024},
+      {"x": 551, "y": 357, "w": 20, "h": 20, "count": 2,"handle x": 10, "handle y": 16,"offset x": 2048, "offset y": 1024},
+      {"x": 551, "y": 357, "w": 20, "h": 20, "count": 2,"handle x": 10, "handle y": 16,"offset x": 2048, "offset y": 1024}
+    ],
+    "light": true,
+    "light switching": true,
+    "rotation aware": true
+  },
+  {
+    "id":"$train00",
+    "type":"train",
+    "frames":[
+      {"x":512,"y":802,"w":20,"h":20,"count":2,"handle x":10,"handle y":16},
+      {"x":512,"y":802,"w":20,"h":20,"count":2,"handle x":10,"handle y":16},
+      {"x":552,"y":802,"w":20,"h":20,"count":2,"handle x":10,"handle y":16},
+      {"x":552,"y":802,"w":20,"h":20,"count":2,"handle x":10,"handle y":16}
+    ],
+    "capacity":80,
+    "animation": [{"id": "$light_train00"}]
+  },
+
+  {
+    "id": "$light_train01",
+    "type": "animation",
+    "frames": [
+      {"x": 457, "y": 427, "w": 20, "h": 19, "count": 2,"handle x": 10, "handle y": 16,"offset x": 2048, "offset y": 1024},
+      {"x": 457, "y": 427, "w": 20, "h": 19, "count": 2,"handle x": 10, "handle y": 16,"offset x": 2048, "offset y": 1024},
+      {"x": 497, "y": 427, "w": 20, "h": 19, "count": 2,"handle x": 10, "handle y": 16,"offset x": 2048, "offset y": 1024},
+      {"x": 497, "y": 427, "w": 20, "h": 19, "count": 2,"handle x": 10, "handle y": 16,"offset x": 2048, "offset y": 1024}
+    ],
+    "light": true,
+    "light switching": true,
+    "rotation aware": true
+  },
+  {
+    "id":"$train01",
+    "type":"train",
+    "frames":[
+      {"x":640,"y":775,"w":20,"h":19,"count":2,"handle x":10,"handle y":16},
+      {"x":640,"y":775,"w":20,"h":19,"count":2,"handle x":10,"handle y":16},
+      {"x":680,"y":775,"w":20,"h":19,"count":2,"handle x":10,"handle y":16},
+      {"x":680,"y":775,"w":20,"h":19,"count":2,"handle x":10,"handle y":16}
+    ],
+    "capacity":100,
+    "animation": [{"id": "$light_train01"}]
+  },
+
+
+
+  // Passenger Trains
+  {
+    "id":"$template_train00",
+    "type":"template",
+    "flag normal": false,
+    "flag train": true,
+    "moveable":false,
+    "chargeable": false,
+    "capacity":10
+  },
+  {
+    "id": "$train_ice00_waggon00",
+    "type": "car",
+    "template":"$template_train00",
+    "frames": [{"x":896,"y":54,"w": 30,"h": 22,"count": 4,"offset x":2048,"offset y":1024}],
+    "v2": true
+  },
+  {
+    "id": "$train_ice00_end00",
+    "type": "car",
+    "template":"$template_train00",
+    "frames": [{"x":896,"y":32,"w": 30,"h": 22,"count": 4,"offset x":2048,"offset y":1024}],
+    "v2": true
+  },
+  {
+    "id": "$train_ice00",
+    "type": "car",
+    "template":"$template_train00",
+    "frames": [{"x":896,"y":76,"w": 30,"h": 22,"count": 4,"offset x":2048,"offset y":1024}],
+    "v2": true,
+    "tail": [
+      "$car_null00",
+      "$train_ice00_waggon00",
+      "$car_null00",
+      "$train_ice00_waggon00",
+      "$car_null00",
+      "$train_ice00_waggon00",
+      "$car_null00",
+      "$train_ice00_waggon00",
+      "$car_null00",
+      "$train_ice00_end00"
+    ]
+  },
+
+
+
+  {
+    "id": "$train_regio00_waggon00",
+    "type": "car",
+    "template":"$template_train00",
+    "frames": [{"x":0,"y":206,"w": 30,"h": 26,"count": 4,"offset x":2048,"offset y":1024}],
+    "v2": true
+  },
+  {
+    "id": "$train_regio00_end00",
+    "type": "car",
+    "template":"$template_train00",
+    "frames": [{"x":0,"y":180,"w": 30,"h": 26,"count": 4,"offset x":2048,"offset y":1024}],
+    "v2": true
+  },
+  {
+    "id": "$train_regio00",
+    "type": "car",
+    "template":"$template_train00",
+    "frames": [{"x":0,"y":162,"w": 25,"h": 18,"count": 4,"offset x":2048,"offset y":1024}],
+    "v2": true,
+    "tail": [
+      "$car_null00",
+      "$train_regio00_waggon00",
+      "$car_null00",
+      "$train_regio00_waggon00",
+      "$car_null00",
+      "$train_regio00_waggon00",
+      "$car_null00",
+      "$train_regio00_waggon00",
+      "$car_null00",
+      "$train_regio00_end00"
+    ]
+  },
+
+
+
+  {
+    "id": "$train_odeg00_waggon00",
+    "type": "car",
+    "template":"$template_train00",
+    "frames": [{"x":264,"y":157,"w":30,"h":22,"count":4,"offset x":2048,"offset y":1024}],
+    "v2": true
+  },
+  {
+    "id": "$train_odeg0_end00",
+    "type": "car",
+    "template":"$template_train00",
+    "frames": [{"x":264,"y":157,"w":30,"h":22,"count":4,"offset x":2048,"offset y":1024}],
+    "v2": true
+  },
+  {
+    "id": "$train_odeg00",
+    "type": "car",
+    "template":"$template_train00",
+    "frames": [{"x":264,"y":157,"w":30,"h":22,"count":4,"offset x":2048,"offset y":1024}],
+    "v2": true
+  },
+
+
+
+  {
+    "id": "$train_neb00_waggon00",
+    "type": "car",
+    "template":"$template_train00",
+    "frames": [{"x":120,"y":184,"w": 20,"h": 22,"count": 4,"offset x":2048,"offset y":1024}],
+    "v2": true
+  },
+  {
+    "id": "$train_neb00_end00",
+    "type": "car",
+    "template":"$template_train00",
+    "frames": [{"x":120,"y":162,"w": 20,"h": 22,"count": 4,"offset x":2048,"offset y":1024}],
+    "v2": true
+  },
+  {
+    "id": "$train_neb00",
+    "type": "car",
+    "template":"$template_train00",
+    "frames": [{"x":120,"y":206,"w": 20,"h": 22,"count": 4,"offset x":2048,"offset y":1024}],
+    "v2": true,
+    "tail": [
+      "$car_null00",
+      "$train_neb00_waggon00",
+      "$car_null00",
+      "$train_neb00_end00"
+    ]
+  },
+
+  {
+    "id": "$train_br64600_waggon00",
+    "type": "car",
+    "template":"$template_train00",
+    "frames": [{"x":0,"y":294,"w": 30,"h": 22,"count": 4,"offset x":2048,"offset y":1024}],
+    "v2": true
+  },
+  {
+    "id": "$train_br64600_end00",
+    "type": "car",
+    "template":"$template_train00",
+    "frames": [{"x":0,"y":272,"w": 30,"h": 22,"count": 4,"offset x":2048,"offset y":1024}],
+    "v2": true
+  },
+  {
+    "id": "$train_br64600",
+    "type": "car",
+    "template":"$template_train00",
+    "frames": [{"x":0,"y":316,"w": 30,"h": 22,"count": 4,"offset x":2048,"offset y":1024}],
+    "v2": true,
+    "tail": [
+      "$train_br64600_waggon00",
+      "$train_br64600_end00"
+    ]
+  },
+
+  {
+    "id": "$light_train_ic00_waggon00",
+    "type": "animation",
+    "light": true,
+    "light switching": true,
+    "frames": [{"x": 640, "y": 351, "w": 30,"h": 26,"count": 4,"offset x": 2048, "offset y": 1024}],
+    "rotation aware": true
+  },
+  {
+    "id": "$train_ic00_waggon00",
+    "type": "car",
+    "template":"$template_train00",
+    "frames": [{"x":120,"y":285,"w": 30,"h": 26,"count": 4,"offset x":2048,"offset y":1024}],
+    "animation": [{"id": "$light_train_ic00_waggon00"}],
+    "v2": true
+  },
+  {
+    "id": "$light_train_ic00_end00",
+    "type": "animation",
+    "light": true,
+    "light switching": true,
+    "frames": [{"x": 337, "y": 422, "w": 30,"h": 26,"count": 4,"offset x": 2048, "offset y": 1024}],
+    "rotation aware": true
+  },
+  {
+    "id": "$train_ic00_end00",
+    "type": "car",
+    "template":"$template_train00",
+    "frames": [{"x":120,"y":259,"w": 30,"h": 26,"count": 4,"offset x":2048,"offset y":1024}],
+    "animation": [{"id": "$light_train_ic00_end00"}],
+    "v2": true
+  },
+  {
+    "id": "$train_ic00",
+    "type": "car",
+    "template":"$template_train00",
+    "frames": [{"x":0,"y":162,"w": 25,"h": 18,"count": 4,"offset x":2048,"offset y":1024}],
+    "v2": true,
+    "tail": [
+      "$car_null00",
+      "$train_ic00_waggon00",
+      "$car_null00",
+      "$train_ic00_waggon00",
+      "$car_null00",
+      "$train_ic00_waggon00",
+      "$car_null00",
+      "$train_ic00_waggon00",
+      "$car_null00",
+      "$train_ic00_end00"
+    ]
+  },
+
+
+
+
+
+
+
+
+  // Freighter
+  {
+    "id": "$train_trailer_coal00",
+    "type": "car",
+    "template":"$template_train00",
+    "frames": [{"x":0,"y":232,"w": 25,"h": 22,"count": 4,"offset x":2048,"offset y":1024}],
+    "v2": true
+  },
+  {
+    "id": "$train_trailer_coal01",
+    "type": "car",
+    "template":"$template_train00",
+    "frames": [{"x":100,"y":232,"w": 25,"h": 22,"count": 4,"offset x":2048,"offset y":1024}],
+    "v2": true
+  },
+  {
+    "id": "$train_trailer_car00",
+    "type": "car",
+    "template":"$template_train00",
+    "frames": [{"x":284,"y":179,"w": 25,"h": 25,"count": 4,"offset x":2048,"offset y":1024}],
+    "v2": true
+  },
+  {
+    "id": "$train_trailer_petrol00",
+    "type": "car",
+    "template":"$template_train00",
+    "frames": [{"x":280,"y":204,"w": 20,"h": 16,"count": 4,"offset x":2048,"offset y":1024}],
+    "v2": true
+  },
+  {
+    "id": "$train_trailer_petrol01",
+    "type": "car",
+    "template":"$template_train00",
+    "frames": [{"x":280,"y":220,"w": 20,"h": 16,"count": 4,"offset x":2048,"offset y":1024}],
+    "v2": true
+  },
+  {
+    "id": "$train_trailer_container00",
+    "type": "car",
+    "template":"$template_train00",
+    "frames": [{"x":200,"y":227,"w": 20,"h": 16,"count": 4,"offset x":2048,"offset y":1024}],
+    "v2": true
+  },
+  {
+    "id": "$train_trailer_container01",
+    "type": "car",
+    "template":"$template_train00",
+    "frames": [{"x":200,"y":179,"w": 20,"h": 16,"count": 4,"offset x":2048,"offset y":1024}],
+    "v2": true
+  },
+  {
+    "id": "$train_trailer_container02",
+    "type": "car",
+    "template":"$template_train00",
+    "frames": [{"x":200,"y":195,"w": 20,"h": 16,"count": 4,"offset x":2048,"offset y":1024}],
+    "v2": true
+  },
+  {
+    "id": "$train_trailer_container03",
+    "type": "car",
+    "template":"$template_train00",
+    "frames": [{"x":280,"y":236,"w": 20,"h": 16,"count": 4,"offset x":2048,"offset y":1024}],
+    "v2": true
+  },
+  {
+    "id": "$train_trailer_container04",
+    "type": "car",
+    "template":"$template_train00",
+    "frames": [{"x":200,"y":211,"w": 20,"h": 16,"count": 4,"offset x":2048,"offset y":1024}],
+    "v2": true
+  },
+  {
+    "id": "$train_trailer_wood00",
+    "type": "car",
+    "template":"$template_train00",
+    "frames":[{"x":200,"y":243,"w": 20,"h": 16,"count": 4,"offset x":2048,"offset y":1024}],
+    "v2":true
+  },
+
+  {
+    "id":"$train_freighter_coal00",
+    "type":"car",
+    "template":"$template_train00",
+    "frames":[{"x":0,"y":162,"w":25,"h":18,"count":4,"offset x":2048,"offset y":1024}],
+    "v2":true,
+    "tail":[
+      "$car_null00",
+      "$train_trailer_coal00",
+      "$car_null00",
+      "$train_trailer_coal00",
+      "$car_null00",
+      "$train_trailer_coal01",
+      "$car_null00",
+      "$train_trailer_coal01",
+      "$car_null00",
+      "$train_trailer_coal01"
+    ]
+  },
+  {
+    "id":"$train_freighter_car00",
+    "type":"car",
+    "template":"$template_train00",
+    "frames":[{"x":0,"y":162,"w":25,"h":18,"count":4,"offset x":2048,"offset y":1024}],
+    "v2":true,
+    "tail":[
+      "$car_null00",
+      "$train_trailer_car00",
+      "$car_null00",
+      "$train_trailer_car00",
+      "$car_null00",
+      "$train_trailer_car00",
+      "$car_null00",
+      "$train_trailer_car00",
+      "$car_null00",
+      "$train_trailer_car00"
+    ]
+  },
+  {
+    "id":"$train_freighter_petrol00",
+    "type":"car",
+    "template":"$template_train00",
+    "frames":[{"x":0,"y":162,"w":25,"h":18,"count":4,"offset x":2048,"offset y":1024}],
+    "v2":true,
+    "tail":[
+      "$car_null00",
+      "$train_trailer_petrol00",
+      "$car_null00",
+      "$train_trailer_petrol00",
+      "$car_null00",
+      "$train_trailer_petrol00",
+      "$car_null00",
+      "$train_trailer_petrol00",
+      "$car_null00",
+      "$train_trailer_petrol00"
+    ]
+  },
+  {
+    "id":"$train_freighter_container00",
+    "type":"car",
+    "template":"$template_train00",
+    "frames":[{"x":0,"y":254,"w":25,"h":18,"count":4,"offset x":2048,"offset y":1024}],
+    "v2":true,
+    "tail":[
+      "$car_null00",
+      "$train_trailer_container00",
+      "$car_null00",
+      "$train_trailer_container01",
+      "$car_null00",
+      "$train_trailer_container02",
+      "$car_null00",
+      "$train_trailer_container03",
+      "$car_null00",
+      "$train_trailer_container04"
+    ]
+  },
+  {
+    "id":"$train_freighter_wood00",
+    "type":"car",
+    "template":"$template_train00",
+    "frames":[{"x":0,"y":254,"w":25,"h":18,"count":4,"offset x":2048,"offset y":1024}],
+    "v2":true,
+    "tail":[
+      "$car_null00",
+      "$train_trailer_wood00",
+      "$car_null00",
+      "$train_trailer_wood00",
+      "$car_null00",
+      "$train_trailer_wood00",
+      "$car_null00",
+      "$train_trailer_wood00",
+      "$car_null00",
+      "$train_trailer_wood00"
+    ]
+  }
+]
